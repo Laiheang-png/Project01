@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>HTML List</h3>
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li> 
+    </ul>
+    <ol>
+        <li>First Item</li>
+        <li>Second Item</li>
+        <li>Third Item</li>
+    </ol>
+    <dl>
+        <dt>HTML</dt>
+        <dd>Hypertext Markup Language</dd>
+        <dt>CSS</dt>
+        <dd>Cascading Style Sheets</dd>
+        <dt>JS</dt>
+        <dd>JavaScript</dd>
+    </dl>
+    <h3>4. Nested Lists</h3>
+    <ul>
+        <li>First Level
+            <ul>
+                <li>Second Level</li>
+                <li>Second Level</li>
+            </ul>
+        </li>
+        <li>First Level</li>
+    </ul>
+    <h3>Preceding Text</h3>
+       <li>I. List Item 1</li>
+         <ol>
+            <li>Nested List Item 1.1</li>
+            <li>Nested List Item 1.2</li>
+         </ol>
+         <li>II. List Item 2</li>
+            <ol>
+                <li>Nested List Item 2.1</li>
+                <li>Nested List Item 2.2</li>
+                <ul>
+                    <li>Nested List Item 2.2.1</li>
+                    <li>Nested List Item 2.2.2</li>
+                    <ul>
+                        <li>Nested List Item 2.2.2.1</li>
+                        <li>Nested List Item 2.2.2.2</li>
+                    </ul>
+                    <li>Nested List Item 2.2.3</li>
+                </ul>
+                <li>Nested List Item 2.3</li>
+            </ol>
+            <li>III. List Item 3</li>
+            <ul>
+                <li>Nested Item 3.1</li>
+                <li>Nested Item 3.1</li>
+                <li>Nested Item 3.1</li>
+            </ul>
+        </li>
+    </ul>
+<style>
+    ul{
+        list-style-type: none;
+        padding: 0;
+    }
+    li::before{
+        content: "";
+        margin-right: 10px;
+        
+    }
+    li:nth-child(1)::before{
+        content: "😘 ";
+    }
+    li:nth-child(2)::before{
+        content: "😎 ";
+    }
+    li:nth-child(3)::before{
+        content: "❤️ ";
+    }
+    li:nth-child(4)::before{
+        content: "🥺 ";
+    }
+
+
+</style>
+
+
+
+
+
+</body>
+</html>
